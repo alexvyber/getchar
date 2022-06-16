@@ -12,6 +12,10 @@ module.exports = {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
+      fontSize: {
+        // "char": "12rem",
+        '20xl': '16rem',
+      },
       colors: {
         primary: {
           // Customize it on globals.css :root
@@ -27,6 +31,7 @@ module.exports = {
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
         },
         dark: '#222222',
+        katzen: '#ff9008',
       },
       keyframes: {
         flicker: {
