@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import Notification from '@/components/Notifications';
 
-export default function Glyph({ glyph }) {
+export default function Glyph({ glyph }: { glyph: string }) {
   // TODO: Seems like a useReducer, don't you think?
   const [showAlert, setShowAlert] = useState(false);
   const [char, setChar] = useState(glyph);

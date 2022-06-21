@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 
-export default function Notification({ char }) {
+export default function Notification({ char }: { char: string }) {
   return (
     <>
       <div
