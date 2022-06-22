@@ -15,11 +15,11 @@ export default function HomePage({ glyphs }: { glyphs: string[] }) {
             GetChar
           </h1>
         </aside>
-        <main className='mb-16 flex grow flex-wrap place-content-center content-around justify-center py-4 sm:px-4 md:px-8 lg:px-12 xl:mb-24 xl:px-16 2xl:px-32'>
+        <section className='mb-16 flex grow flex-wrap place-content-center content-around justify-center py-4 sm:px-4 md:px-8 lg:px-12 xl:mb-24 xl:px-16 2xl:px-32'>
           {glyphs.map((glyph: string) => (
             <Char glyph={glyph} key={glyph} />
           ))}
-        </main>
+        </section>
       </main>
     </>
   );
