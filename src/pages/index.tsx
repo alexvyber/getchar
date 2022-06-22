@@ -1,24 +1,27 @@
 import * as React from 'react';
 
-import Glyph from '@/components/Glyph';
+import Char from '@/components/Char';
 
 export default function HomePage({ glyphs }: { glyphs: string[] }) {
   return (
     /* <Seo templateTitle='Home' /> */
     /* <Seo /> */
+    <>
+      <title>GetChar - Where chars live=))</title>
 
-    <main className='mx-auto flex flex-auto flex-col justify-center p-2 dark:bg-gray-800'>
-      <aside className='mx-auto max-w-7xl py-32 px-4 sm:px-6 lg:px-8'>
-        <h1 className='text-6xl font-bold sm:text-8xl md:text-9xl xl:text-9xl '>
-          GetChar
-        </h1>
-      </aside>
-      <main className='mb-16 flex grow flex-wrap place-content-center content-around justify-center py-4 sm:px-4 md:px-8 lg:px-12 xl:mb-24 xl:px-16 2xl:px-32'>
-        {glyphs.map((glyph: string) => (
-          <Glyph glyph={glyph} key={glyph} />
-        ))}
+      <main className='mx-auto flex flex-auto flex-col justify-center p-2 dark:bg-gray-800'>
+        <aside className='mx-auto max-w-7xl py-32 px-4 sm:px-6 lg:px-8'>
+          <h1 className='text-6xl font-bold sm:text-8xl md:text-9xl xl:text-9xl '>
+            GetChar
+          </h1>
+        </aside>
+        <main className='mb-16 flex grow flex-wrap place-content-center content-around justify-center py-4 sm:px-4 md:px-8 lg:px-12 xl:mb-24 xl:px-16 2xl:px-32'>
+          {glyphs.map((glyph: string) => (
+            <Char glyph={glyph} key={glyph} />
+          ))}
+        </main>
       </main>
-    </main>
+    </>
   );
 }
 
