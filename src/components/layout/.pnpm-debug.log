@@ -1,0 +1,21 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "ts-nextjs-tailwind-starter@0.1.0",
+    "stage": "lint:fix",
+    "script": "eslint src --fix && yarn format",
+    "pkgname": "ts-nextjs-tailwind-starter",
+    "err": {
+      "name": "pnpm",
+      "message": "ts-nextjs-tailwind-starter@0.1.0 lint:fix: `eslint src --fix && yarn format`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: ts-nextjs-tailwind-starter@0.1.0 lint:fix: `eslint src --fix && yarn format`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/home/alexs/.nvm/versions/node/v18.4.0/lib/node_modules/pnpm/dist/pnpm.cjs:94974:22)\n    at ChildProcess.emit (node:events:537:28)\n    at maybeClose (node:internal/child_process:1091:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:302:5)"
+    }
+  }
+}
